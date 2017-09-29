@@ -62,6 +62,16 @@ P.parse(number, '2017');
 
 ## API
 
+__WARNING: Unstable__
+
+This API hasn't been fully vetted yet, and is subject to change before 1.0.0.
+
+#### `parse(parser, string)`
+
+The `parse` function accepts a __uparse__ parser (see below) and a string to
+apply the parser to. If the parser successfully matches the string, the details
+of what was matched are returned. Otherwise, the return value is `null`.
+
 #### `str(string, [formatter])`
 
 The `str` combinator accepts a string and an optional formatter function and
