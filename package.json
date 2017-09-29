@@ -1,0 +1,36 @@
+{
+  "name": "uparse",
+  "version": "0.1.0",
+  "description": "Tiny parser combinator library",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover test/*.js",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "lint": "standard",
+    "test": "tape test.js",
+    "validate": "npm run lint && npm test && npm run coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimf/uparse"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "parser",
+    "parse",
+    "combinator"
+  ],
+  "author": "Jim Fitzpatrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimf/uparse/issues"
+  },
+  "homepage": "https://github.com/jimf/uparse",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^10.0.0",
+    "tape": "^4.8.0"
+  }
+}
