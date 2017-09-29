@@ -1,4 +1,4 @@
-# uparse
+# μparse
 
 A tiny parser combinator library.
 
@@ -7,7 +7,7 @@ A tiny parser combinator library.
 [![Test Coverage][coverage-badge]][coverage-result]
 [![Dependency Status][dep-badge]][dep-status]
 
-__uparse__ is a minimal parser combinator library, providing only a very basic
+__μparse__ is a minimal parser combinator library, providing only a very basic
 set of functions for consuming text and building up more complicated pattern
 matchers. It is specifically _not_ focused on providing a breadth of
 combinators, monadic APIs, or deep error reporting.
@@ -20,7 +20,7 @@ Install using [npm][]:
 
 ## Usage
 
-__uparse__ exposes two base combinators for consuming text:
+__μparse__ exposes two base combinators for consuming text:
 [`str`](#strstring-formatter) and [`char`](#charcharacterclass-formatter).
 These combinators consume a string and a character respectively. In addition we
 have a number of combinators for building up more interesting parsers:
@@ -71,7 +71,7 @@ This API hasn't been fully vetted yet, and is subject to change before 1.0.0.
 
 #### `parse(parser, string)`
 
-The `parse` function accepts a __uparse__ parser (see below) and a string to
+The `parse` function accepts a __μparse__ parser (see below) and a string to
 apply the parser to. If the parser successfully matches the string, the details
 of what was matched are returned. Otherwise, the return value is `null`.
 
