@@ -4,6 +4,7 @@
   "description": "Tiny parser combinator library",
   "main": "index.js",
   "scripts": {
+    "coveralls": "coveralls < coverage/lcov.info",
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "nyc tape test.js"
