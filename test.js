@@ -30,7 +30,7 @@ test('seq combinator', function (t) {
     { seq: [{ char: '2' }, { str: '+' }, { char: '5' }] },
     'matches a sequence of parsers'
   )
-  t.equal(parse(addition, '2+z'), null, 'fails non-matching strings')
+  t.equal(parse(addition, 'xyz'), null, 'fails non-matching strings')
   t.deepEqual(parse(additionFormatted, '2+8'), ['+', 2, 8], 'accepts optional formatting function')
   t.end()
 })
