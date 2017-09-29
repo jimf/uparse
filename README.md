@@ -20,14 +20,17 @@ Install using [npm][]:
 
 ## Usage
 
-__uparse__ exposes two base combinators for consuming text: `str` and `char`.
+__uparse__ exposes two base combinators for consuming text:
+[`str`](#strstring-formatter) and [`char`](#charcharacterclass-formatter).
 These combinators consume a string and a character respectively. In addition we
-have a number of combinators for building up more interesting parsers: `seq`,
-`rep`, `opt`, `alt`, and `ref`. Lastly, `parse` takes a parser and a string to
-apply the parser to. Matches return a nested object structure containing the
-matched substring values, while misses return `null`.
+have a number of combinators for building up more interesting parsers:
+[`seq`](#seqparsers-formatter), [`rep`](#repparser-n-formatter),
+[`opt`](#optparser-formatter), [`alt`](#altparsers-formatter), and
+[`ref`](#refcontext-name). Lastly, [`parse`](#parseparser-string) takes a parser
+and a string to apply the parser to. Matches return a nested object structure
+containing the matched substring values, while misses return `null`.
 
-See the API section for more information on each of these functions.
+See the [API](#api) section for more information on each of these functions.
 
 ```js
 var P = require('uparse');
